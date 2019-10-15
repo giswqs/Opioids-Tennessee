@@ -15,7 +15,7 @@
 * [mybinder.org](https://mybinder.org/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
 * [binder.pangeo.io](https://binder.pangeo.io/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
 
-## GitHub Version
+## GitHub Repository
 
 * <https://github.com/giswqs/Opioids-Tennessee>
 

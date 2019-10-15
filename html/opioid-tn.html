@@ -13161,6 +13161,8 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">calendar</span>
 <span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13175,19 +13177,8 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># magic function making plot outputs appear within the notebook</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># change the default plot output size</span>
+<span class="c1"># change the default plot output size</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 </pre></div>
 
@@ -13206,7 +13197,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set file paths of opioid and population data</span>
@@ -13221,7 +13212,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read population data</span>
@@ -13231,25 +13222,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/qiusheng/.conda/envs/py37/lib/python3.7/site-packages/IPython/core/interactiveshell.py:3058: DtypeWarning: Columns (3,5,22,26) have mixed types. Specify dtype option on import or set low_memory=False.
-  interactivity=interactivity, compiler=compiler, result=result)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13278,7 +13250,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
@@ -13355,7 +13327,7 @@ Total number of columns: 42
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Take a look at the first five rows</span>
@@ -13372,7 +13344,7 @@ Total number of columns: 42
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13553,7 +13525,7 @@ Total number of columns: 42
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Take a look at the last five rows</span>
@@ -13570,7 +13542,7 @@ Total number of columns: 42
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13758,7 +13730,7 @@ Total number of columns: 42
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Select 11 columns for further investigation</span>
@@ -13804,7 +13776,7 @@ Combined_Labeler_Name
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13820,7 +13792,7 @@ Combined_Labeler_Name
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13940,7 +13912,7 @@ Combined_Labeler_Name
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Total number of rows: {len(data.index):,}&quot;</span><span class="p">)</span>
@@ -13971,7 +13943,7 @@ Combined_Labeler_Name
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check the transaction date format. Note that it is in the MMDDYYYY format, but we need to pad zeros </span>
@@ -13988,7 +13960,7 @@ Combined_Labeler_Name
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -14010,7 +13982,7 @@ Name: TRANSACTION_DATE, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Convert TRANSACTION_DATE from String to DateTime and pad zeros</span>
@@ -14024,7 +13996,7 @@ Name: TRANSACTION_DATE, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Take a look at the revised TRANSACTION_DATE</span>
@@ -14041,7 +14013,7 @@ Name: TRANSACTION_DATE, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -14063,7 +14035,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Take a look at the first five rows again with revised TRANSACTION_DATE</span>
@@ -14080,7 +14052,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14207,7 +14179,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_pills</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">DOSAGE_UNIT</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -14239,7 +14211,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_pop</span> <span class="o">=</span> <span class="n">pop</span><span class="p">[</span><span class="s1">&#39;Pop&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14271,7 +14243,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">avg_pills</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">total_pills</span> <span class="o">/</span> <span class="n">total_pop</span><span class="p">)</span>
@@ -14303,7 +14275,7 @@ Name: TRANSACTION_DATE, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check TN counties</span>
@@ -14339,7 +14311,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check TN cities</span>
@@ -14381,7 +14353,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pills_by_year</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;TRANSACTION_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">TRANSACTION_DATE</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14398,7 +14370,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14470,7 +14442,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the trend by year</span>
@@ -14491,7 +14463,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14536,7 +14508,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pills_by_month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;TRANSACTION_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">TRANSACTION_DATE</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14556,7 +14528,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14648,7 +14620,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the trend by month</span>
@@ -14669,7 +14641,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14714,7 +14686,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pills_by_day</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;TRANSACTION_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">TRANSACTION_DATE</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14737,7 +14709,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[25]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -14783,7 +14755,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pills_by_dayofweek</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;TRANSACTION_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">TRANSACTION_DATE</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofweek</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14803,7 +14775,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -14875,7 +14847,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">pills_by_dayofweek</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Pill Count Summary by Day of Week&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -14895,7 +14867,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -14941,7 +14913,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pills_by_year_month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;TRANSACTION_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="n">data</span><span class="o">.</span><span class="n">TRANSACTION_DATE</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> 
@@ -14967,7 +14939,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -15017,7 +14989,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">distributors</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;REPORTER_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;REPORTER_NAME&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15035,7 +15007,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -15127,7 +15099,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;REPORTER_NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;REPORTER_NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15146,7 +15118,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15230,7 +15202,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">distributors_top10</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">distributors_top10</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">15</span><span class="p">]</span>
@@ -15251,7 +15223,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -15297,7 +15269,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">manufacturers</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Combined_Labeler_Name&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Combined_Labeler_Name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15315,7 +15287,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -15399,7 +15371,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">manufacturers_top10</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">manufacturers_top10</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">15</span><span class="p">]</span>
@@ -15420,7 +15392,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -15466,7 +15438,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;BUYER_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;BUYER_NAME&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15484,7 +15456,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -15568,7 +15540,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers_top10</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">buyers_top10</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">15</span><span class="p">]</span>
@@ -15589,7 +15561,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -15627,7 +15599,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counties</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;BUYER_COUNTY&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;BUYER_COUNTY&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15645,7 +15617,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -15729,7 +15701,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">counties_top10</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Pill Count Summary by County&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -15749,7 +15721,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -15790,7 +15762,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;BUYER_CITY&#39;</span><span class="p">,</span> <span class="s1">&#39;DOSAGE_UNIT&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;BUYER_CITY&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -15808,7 +15780,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -15892,7 +15864,7 @@ Total number of counties: 95
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">cities_top10</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Pill Count Summary by City&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -15912,7 +15884,7 @@ Total number of counties: 95
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -15944,52 +15916,6 @@ Total number of counties: 95
 >
 </div>
 
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geojson_file</span> <span class="o">=</span> <span class="s1">&#39;/media/hdd/Data/Opioids/tn_county_census_2010.geojson&#39;</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">geojson_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="n">geojson_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-<span class="n">m</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mf">35.869255</span><span class="p">,</span> <span class="o">-</span><span class="mf">85.894190</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">geo_json</span> <span class="o">=</span> <span class="n">GeoJSON</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">geojson_data</span><span class="p">)</span>
-<span class="n">m</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">geo_json</span><span class="p">)</span>
-<span class="n">m</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-529b5eb15d31&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> geojson_file <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;/media/hdd/Data/Opioids/tn_county_census_2010.geojson&#39;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">with</span> open<span class="ansi-blue-fg">(</span>geojson_file<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;r&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">as</span> f<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">   </span>geojson_data <span class="ansi-blue-fg">=</span> json<span class="ansi-blue-fg">.</span>load<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> m <span class="ansi-blue-fg">=</span> Map<span class="ansi-blue-fg">(</span>center<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">35.869255</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">85.894190</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> zoom<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> geo_json <span class="ansi-blue-fg">=</span> GeoJSON<span class="ansi-blue-fg">(</span>data<span class="ansi-blue-fg">=</span>geojson_data<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;json&#39; is not defined</pre>
-</div>
 </div>
 
 </div>

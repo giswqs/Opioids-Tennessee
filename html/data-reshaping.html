@@ -13128,6 +13128,8 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13324,29 +13326,6 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/home/qiusheng/.conda/envs/py37/lib/python3.7/site-packages/ipykernel_launcher.py:14: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
-  
-/home/qiusheng/.conda/envs/py37/lib/python3.7/site-packages/ipykernel_launcher.py:18: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
-/home/qiusheng/.conda/envs/py37/lib/python3.7/site-packages/ipykernel_launcher.py:20: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
-/home/qiusheng/.conda/envs/py37/lib/python3.7/site-packages/ipykernel_launcher.py:16: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
-  app.launch_new_instance()
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13435,101 +13414,101 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>City</th>
-      <th>Displinary</th>
-      <th>ExpDate</th>
-      <th>FacLicNum</th>
       <th>Id</th>
-      <th>MedDirector</th>
       <th>Name</th>
+      <th>MedDirector</th>
+      <th>FacLicNum</th>
+      <th>Street</th>
+      <th>Status</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
       <th>OrgLic</th>
       <th>Phone</th>
-      <th>State</th>
-      <th>Status</th>
-      <th>Street</th>
-      <th>Zip</th>
+      <th>ExpDate</th>
+      <th>Displinary</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Smyrna</td>
-      <td>1 Disciplinary Action(s)</td>
-      <td>03/31/2018</td>
-      <td>00000592</td>
       <td>1.0</td>
-      <td>Hau La, M.D.</td>
       <td>Absolute Medical Care</td>
+      <td>Hau La, M.D.</td>
+      <td>00000592</td>
+      <td>713 B President Place</td>
+      <td>Lic Surrendered</td>
+      <td>Smyrna</td>
+      <td>TN</td>
+      <td>37167</td>
       <td>03/07/2016</td>
       <td>615-667-1299</td>
-      <td>TN</td>
-      <td>Lic Surrendered</td>
-      <td>713 B President Place</td>
-      <td>37167</td>
+      <td>03/31/2018</td>
+      <td>1 Disciplinary Action(s)</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Seymour</td>
-      <td>No Disciplinary Actions</td>
-      <td></td>
-      <td>00000000</td>
       <td>2.0</td>
-      <td>GHOLAMREZA SHAREGHI</td>
       <td>ACCELERATED MEDICAL OF SEYMOUR</td>
+      <td>GHOLAMREZA SHAREGHI</td>
+      <td>00000000</td>
+      <td>319 BLUE PEACOCK WAY</td>
+      <td>Closed Appl</td>
+      <td>Seymour</td>
+      <td>TN</td>
+      <td>37865</td>
       <td></td>
       <td>865-216-8930</td>
-      <td>TN</td>
-      <td>Closed Appl</td>
-      <td>319 BLUE PEACOCK WAY</td>
-      <td>37865</td>
+      <td></td>
+      <td>No Disciplinary Actions</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Mc Minnville</td>
-      <td>No Disciplinary Actions</td>
-      <td>11/30/2016</td>
-      <td>00000530</td>
       <td>3.0</td>
-      <td>FRANCISCO AVILA, M.D.</td>
       <td>ACCEPTANCE HEALTH</td>
+      <td>FRANCISCO AVILA, M.D.</td>
+      <td>00000530</td>
+      <td>1012 SOUTH CHANCERY STREET</td>
+      <td>Facility Closed</td>
+      <td>Mc Minnville</td>
+      <td>TN</td>
+      <td>37110</td>
       <td>11/18/2014</td>
       <td>931-507-6325</td>
-      <td>TN</td>
-      <td>Facility Closed</td>
-      <td>1012 SOUTH CHANCERY STREET</td>
-      <td>37110</td>
+      <td>11/30/2016</td>
+      <td>No Disciplinary Actions</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Murfreesboro</td>
-      <td>No Disciplinary Actions</td>
-      <td>04/30/2014</td>
-      <td>00000276</td>
       <td>4.0</td>
-      <td>LAWRENCE JOSEPH VALDEZ, M.D.</td>
       <td>ACCESS SOLUTIONS WELLNESS, P.C.</td>
+      <td>LAWRENCE JOSEPH VALDEZ, M.D.</td>
+      <td>00000276</td>
+      <td>805 S. CHURCH STREET SUITE 20</td>
+      <td>Expired</td>
+      <td>Murfreesboro</td>
+      <td>TN</td>
+      <td>37130</td>
       <td>04/03/2012</td>
       <td>615-962-9011</td>
-      <td>TN</td>
-      <td>Expired</td>
-      <td>805 S. CHURCH STREET SUITE 20</td>
-      <td>37130</td>
+      <td>04/30/2014</td>
+      <td>No Disciplinary Actions</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Cookeville</td>
-      <td>No Disciplinary Actions</td>
-      <td>02/28/2019</td>
-      <td>00000637</td>
       <td>5.0</td>
-      <td>David McAfee, M.D.</td>
       <td>Active Pain Management Solutions</td>
+      <td>David McAfee, M.D.</td>
+      <td>00000637</td>
+      <td>620 S Jefferson Ave, Suite 202</td>
+      <td>Facility Closed</td>
+      <td>Cookeville</td>
+      <td>TN</td>
+      <td>38501</td>
       <td>02/02/2017</td>
       <td>931-526-7246</td>
-      <td>TN</td>
-      <td>Facility Closed</td>
-      <td>620 S Jefferson Ave, Suite 202</td>
-      <td>38501</td>
+      <td>02/28/2019</td>
+      <td>No Disciplinary Actions</td>
     </tr>
   </tbody>
 </table>
@@ -13703,6 +13682,19 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save the dataframe to Excel</span>
 <span class="n">out_df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">out_excel_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
