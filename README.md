@@ -1,17 +1,19 @@
 # Opioids-Tennessee
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/giswqs/Opioids-Tennessee/master)
-[![pangeo](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/giswqs/Opioids-Tennessee/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
+[![pangeo](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
 [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Static HTML Version
 
-* <https://spatial.utk.edu/python>
+* [Opioids in the United States](https://giswqs.github.io/Opioids-Tennessee/html/opioid-us.html)
+* [Opiods in Tennessee](https://giswqs.github.io/Opioids-Tennessee/html/opioid-tn.html)
+* [Data reshaping](https://giswqs.github.io/Opioids-Tennessee/html/data-reshaping.html)
 
 ## Interactive Jupyter Notebook Version
 
-* [mybinder.org](https://mybinder.org/v2/gh/giswqs/Opioids-Tennessee/master)
-* [binder.pangeo.io](https://binder.pangeo.io/v2/gh/giswqs/Opioids-Tennessee/master)
+* [mybinder.org](https://mybinder.org/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
+* [binder.pangeo.io](https://binder.pangeo.io/v2/gh/giswqs/Opioids-Tennessee/gh-pages)
 
 ## GitHub Version
 
