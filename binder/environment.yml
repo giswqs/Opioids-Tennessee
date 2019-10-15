@@ -1,0 +1,13 @@
+name: opioid-env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip
+  - pip:
+    - nbgitpuller
+    - sphinx-gallery
+    - pandas
+    - matplotlib 
+    - ipyleaflet
