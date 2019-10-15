@@ -17,8 +17,18 @@
 
 * <https://github.com/giswqs/Opioids-Tennessee>
 
+## ArcGIS StoryMaps
+
+ * [Opioids in Tennessee - by Michael Camponovo](https://storymaps.arcgis.com/stories/92678e77f9f9467bbad17c06f68ac67b)
+
+## Datasets
+
+* [Washington Post Opioid Dataset](https://www.washingtonpost.com/graphics/2019/investigations/dea-pain-pill-database/)
+* [Tennessee Geographic Alliance Open Data](https://data-tga.opendata.arcgis.com/search?tags=opioid)
+* [Tennessee Opioid Data (2006-2012)](https://www.washingtonpost.com/wp-stat/dea-pain-pill-database/summary/arcos-tn-statewide-itemized.tsv.gz) (zip file: 139 MB; uncompressed: 2.4 GB; 5.75 million rows)
+* [Tennessee Population by County (2019)](http://worldpopulationreview.com/us-counties/tn/)
+
 ## Contact
 
 * [Qiusheng Wu](https://wetlands.io)
-* [Michael Camponovo](http://geography.utk.edu/about-us/faculty/michael-camponovo/)
-
+* [Michael Camponovo](https://geography.utk.edu/about-us/faculty/michael-camponovo/)
